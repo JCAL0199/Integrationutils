@@ -20,29 +20,3 @@ spec:
   owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: reintegro-de-semanas
-  description: Reintegro de Semanas
-  tags:
-    - proceso-negocio
-spec:
-  type: negocio
-  lifecycle: experimental
-  owner: group:default/developers
-  subcomponentOf: component:default/integrationutils
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: precifras
-  description: Reintegro de Semanas/Precifras
-  tags:
-    - sub-etapa
-spec:
-  type: subetapa
-  lifecycle: experimental
-  owner: group:default/developers
-  subcomponentOf: component:default/reintegro-de-semanas
