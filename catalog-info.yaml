@@ -32,26 +32,13 @@ spec:
   type: negocio
   lifecycle: experimental
   owner: group:default/developers
-  subcomponentOf: component:default/service-flask
+  subcomponentOf: component:default/integrationutils
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: carga-archivo
-  description: Dispersión Ordinaria IMSS/Carga Archivo -Edición
-  tags:
-    - sub-etapa
-spec:
-  type: subetapa
-  lifecycle: experimental
-  owner: group:default/developers
-  subcomponentOf: component:default/dispersion-ordinaria-imss
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: idc
-  description: Dispersión Ordinaria IMSS/IDC
+  name: revision-idc
+  description: Dispersión Ordinaria IMSS/Revición IDC
   tags:
     - sub-etapa
 spec:
